@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>Hello HTML</title>
+        <link rel=stylesheet href=style.css>
+    </head>
+    <body>
+        <ul id="nav"> 
+            <li><a href="https://www.baidu.com/">首页</a></li> 
+            <li><a href="https://www.baidu.com/">项目案例</a></li> 
+            <li><a href="https://www.baidu.com/">购买</a></li> 
+            <li><a href="https://www.baidu.com/">使用说明</a></li> 
+            <li><a href="https://xijinian.xyz/">我的博客</a></li> 
+            <li><a href="https://www.baidu.com/">关于我</a></li> 
+        </ul>
+        <div class=hello>
+            <div class=hello-html>
+                <div class=text-hello style=margin-bottom:20px;>Hello，小粥粥</div>
+                <img class=fc src=img/fc.png>
+            </div>
+        </div>
+        <div class=water></div>
+        <div class=water-bottom></div>
+        <div class="clouds clouds1"></div>
+        <div class="clouds clouds2"></div>
+        <div class="clouds clouds3"></div>
+        <div class="clouds clouds4"></div>
+        <div class="clouds clouds5"></div>
+        <div class=monster></div>
+        <div class=ad style="bottom:100px;"></div>
+    </body>
+    <script>
+        var num = 0;
+        var img = document.getElementsByTagName('img')[0];
+        function change() {
+            num = num + 0.3;
+            img.style.transform = "rotate(" + num + "deg)";
+        }
+        num = 0;
+        setInterval('change()' , 1)
+    </script>
+</html>
